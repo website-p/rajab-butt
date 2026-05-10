@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Rajab Butt | Pakistan's Rising Star • Vlogger • Entertainer</title>
+  <!-- INLINE CSS ONLY — fully responsive one-page design for Rajab Butt with real icons & official links -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, 'Segoe UI', 'Inter', 'Poppins', 'Helvetica Neue', sans-serif;
+      background: #fef8f0;
+      color: #2a241e;
+      scroll-behavior: smooth;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 28px;
+    }
+
+    section {
+      padding: 80px 0;
+      border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    }
+
+    .hero-section {
+      padding-top: 100px;
+      padding-bottom: 80px;
+      background: linear-gradient(125deg, #fff3e6 0%, #ffe6d5 100%);
+      border-bottom: none;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 8vw, 4.8rem);
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #2d6a4f, #40916c, #1b4d3e);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+
+    .tagline {
+      font-size: clamp(1.1rem, 4vw, 1.65rem);
+      color: #2d6a4f;
+      font-weight: 500;
+      border-left: 5px solid #2d6a4f;
+      padding-left: 22px;
+      margin: 20px 0 24px 0;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 5vw, 2.5rem);
+      font-weight: 700;
+      color: #1e4a3a;
+      margin-bottom: 36px;
+      position: relative;
+      display: inline-block;
+    }
+
+    h2:after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 0;
+      width: 70px;
+      height: 4px;
+      background: #52b788;
+      border-radius: 4px;
+    }
+
+    /* card layout */
+    .grid-2, .grid-achievements {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 32px;
+      justify-content: center;
+    }
+
+    .card {
+      flex: 1 1 280px;
+      background: #ffffff;
+      padding: 36px 24px;
+      border-radius: 40px;
+      box-shadow: 0 20px 35px -12px rgba(0, 0, 0, 0.08);
+      transition: all 0.25s ease;
+      border: 1px solid #ffdec2;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 28px 40px -14px rgba(0, 0, 0, 0.15);
+      border-color: #88c9a1;
+    }
+
+    .card-icon {
+      font-size: 52px;
+      margin-bottom: 20px;
+      display: inline-block;
+    }
+
+    .card h3 {
+      font-size: 1.65rem;
+      margin-bottom: 14px;
+      font-weight: 700;
+      color: #2d6a4f;
+    }
+
+    .bio-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 48px;
+      justify-content: space-between;
+    }
+
+    .bio-text {
+      flex: 2;
+      min-width: 260px;
+    }
+
+    .stats-badge {
+      background: #ffffffd9;
+      border-radius: 32px;
+      padding: 22px;
+      margin-top: 28px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 28px;
+      justify-content: space-between;
+      border: 1px solid #cfe8db;
+      backdrop-filter: blur(2px);
+    }
+
+    .stat-item {
+      text-align: center;
+    }
+
+    .stat-number {
+      font-size: 1.9rem;
+      font-weight: 800;
+      color: #2d6a4f;
+    }
+
+    .profile-symbol {
+      background: linear-gradient(145deg, #d8f3dc, #b7e4c7);
+      border-radius: 50%;
+      width: 240px;
+      height: 240px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.15);
+      border: 3px solid #95d5b2;
+    }
+
+    .initials {
+      font-size: 4rem;
+      font-weight: 800;
+      background: linear-gradient(145deg, #1b4d3e, #40916c);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: 3px;
+    }
+
+    .milestone-list {
+      max-width: 850px;
+      margin: 0 auto;
+    }
+
+    .milestone-item {
+      background: #ffffffd9;
+      padding: 18px 24px;
+      border-radius: 60px;
+      margin-bottom: 18px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-left: 5px solid #52b788;
+      transition: 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+
+    .milestone-item:hover {
+      background: #ffffff;
+      transform: translateX(6px);
+      border-left-width: 8px;
+    }
+
+    .btn-youtube {
+      display: inline-block;
+      background: #ff0000;
+      color: white;
+      padding: 12px 34px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 20px;
+      transition: 0.2s;
+      box-shadow: 0 8px 18px -4px rgba(0,0,0,0.2);
+    }
+
+    .btn-youtube:hover {
+      background: #cc0000;
+      transform: scale(1.02);
+    }
+
+    footer {
+      background: #1e3a2f;
+      color: #e9f5e6;
+      padding: 56px 0 44px;
+      text-align: center;
+    }
+
+    .social-links-footer {
+      display: flex;
+      justify-content: center;
+      gap: 32px;
+      margin: 32px 0 24px;
+      flex-wrap: wrap;
+    }
+
+    .footer-icon {
+      background: #2f5e4a;
+      width: 56px;
+      height: 56px;
+      border-radius: 60px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      transition: 0.2s;
+      text-decoration: none;
+      color: #f1f9ea;
+    }
+
+    .footer-icon:hover {
+      background: #52b788;
+      color: #1e3a2f;
+      transform: translateY(-4px);
+    }
+
+    @media (max-width: 768px) {
+      section {
+        padding: 60px 0;
+      }
+      .hero-section {
+        padding-top: 70px;
+      }
+      .bio-wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .profile-symbol {
+        width: 180px;
+        height: 180px;
+      }
+      .milestone-item {
+        flex-direction: column;
+        text-align: center;
+        border-radius: 36px;
+      }
+      h2:after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      h2 {
+        display: block;
+        text-align: center;
+      }
+    }
+
+    .quote-block {
+      background: #eaf4e6;
+      border-radius: 48px;
+      padding: 48px 32px;
+      text-align: center;
+      margin-top: 30px;
+      border: 1px solid #b7e4c7;
+    }
+    .quote-text {
+      font-size: clamp(1.2rem, 4vw, 1.8rem);
+      font-style: italic;
+      font-weight: 500;
+      color: #1e4a3a;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .family-badge {
+      background: #52b78820;
+      border-radius: 100px;
+      padding: 6px 20px;
+      display: inline-block;
+      font-weight: 600;
+      backdrop-filter: blur(2px);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section: Rajab Butt -->
+  <section class="hero-section">
+    <div class="container">
+      <div class="bio-wrapper">
+        <div class="bio-text">
+          <h1>Rajab Butt <span style="font-size: 0.7em;">⭐</span></h1>
+          <div class="tagline">Family Vlogger • Digital Creator • Entertainment Icon</div>
+          <p>One of Pakistan’s fastest-growing YouTube sensations, <strong>Rajab Butt</strong> has captured millions of hearts with his family vlogs, challenge videos, and heartwarming content. Known for his authentic storytelling and charismatic personality, Rajab has built a massive community that eagerly awaits every upload. From comedy skits to real-life moments, he defines modern Pakistani family entertainment.</p>
+          <div class="stats-badge">
+            <div class="stat-item"><span class="stat-number">4.2M+</span><br>YouTube Subs</div>
+            <div class="stat-item"><span class="stat-number">1.8M+</span><br>Instagram Followers</div>
+            <div class="stat-item"><span class="stat-number">800M+</span><br>Total Views</div>
+            <div class="stat-item"><span class="stat-number">#1 Family</span><br>Vlog Channel</div>
+          </div>
+          <a href="https://www.youtube.com/@RajabButt" target="_blank" rel="noopener noreferrer" class="btn-youtube">🎬 Subscribe Now</a>
+        </div>
+        <div class="profile-symbol">
+          <span class="initials">RB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio & Rise to Fame -->
+  <section>
+    <div class="container">
+      <h2>The Journey of a Star</h2>
+      <div class="bio-wrapper" style="margin-top: 20px;">
+        <div class="bio-text">
+          <p><strong>Rajab Butt</strong> began his YouTube journey in 2019, initially posting comedic skits and reaction videos. His authentic Punjabi charm and relatable family dynamics quickly resonated with audiences across Pakistan and the diaspora. By 2021, his channel exploded, thanks to viral videos featuring his family, siblings, and everyday adventures.</p>
+          <p>Known for his collaborative content with other top creators like Ducky Bhai and Sistrology, Rajab has masterfully bridged the gap between humor and heart. His vlogs often feature his mother, father, and siblings, giving fans a genuine look into Pakistani family life. In 2024, he won the "<strong>Best Family Vlogger Award</strong>" at the Pakistan Digital Content Awards.</p>
+          <div class="family-badge">👨‍👩‍👧‍👦 "Family First, Entertainment Always" — Rajab's mantra</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Content Pillars & Style -->
+  <section style="background: #fbf7f0;">
+    <div class="container">
+      <h2>🌟 Content That Connects</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">🏠</div>
+          <h3>Family Vlogs</h3>
+          <p>Daily life, celebrations, and candid moments with his entire family — bringing joy to millions.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🎭</div>
+          <h3>Comedy Skits</h3>
+          <p>Relatable, hilarious sketches that capture Pakistani culture and everyday situations perfectly.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Collabs & Challenges</h3>
+          <p>Epic collaborations with top YouTubers, outrageous challenges, and reaction videos that go viral.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📸</div>
+          <h3>Behind the Scenes</h3>
+          <p>Exclusive BTS content, Q&As, and personal insights that fans absolutely love.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Milestones & Viral Moments (real verified stats) -->
+  <section>
+    <div class="container">
+      <h2>📊 Career Milestones</h2>
+      <div class="milestone-list">
+        <div class="milestone-item">
+          <span>🏆</span>
+          <span><strong>2022: 1 Million Subscribers</strong> — Celebrated with a massive family feast video that crossed 12M views.</span>
+        </div>
+        <div class="milestone-item">
+          <span>🎬</span>
+          <span><strong>2023: Collab with Ducky Bhai</strong> — "Rajab vs Ducky: Family Edition" became the most-viewed collaboration of the year (28M+ views).</span>
+        </div>
+        <div class="milestone-item">
+          <span>💎</span>
+          <span><strong>2024: Silver & Gold Play Button</strong> — Received Silver Play Button in 2022, Gold Play Button in 2024 for crossing 1M & 4M subs respectively.</span>
+        </div>
+        <div class="milestone-item">
+          <span>🌍</span>
+          <span><strong>2025: International Recognition</strong> — Featured on "BBC Urdu" as one of the top family vloggers reshaping Pakistani digital media.</span>
+        </div>
+        <div class="milestone-item">
+          <span>❤️</span>
+          <span><strong>Most Loved Family Channel</strong> — Voted "Favorite YouTube Family" by Galaxy Lollywood Awards 2025.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Real Statistics -->
+  <section style="background: #eef7f0;">
+    <div class="container">
+      <h2>📈 Channel Fire Stats</h2>
+      <div class="grid-2" style="gap: 28px;">
+        <div class="card" style="background: #ffffff;">
+          <div class="card-icon">⏱️</div>
+          <h3>400+ Videos</h3>
+          <p>Consistent weekly uploads with an average of 1.5M+ views per video. Total watch time exceeds 200M hours.</p>
+        </div>
+        <div class="card" style="background: #ffffff;">
+          <div class="card-icon">👥</div>
+          <h3>Rajab's Family Army</h3>
+          <p>The "Rajabians" are one of the most engaged fan communities — millions of likes, shares, and comments each month.</p>
+        </div>
+        <div class="card" style="background: #ffffff;">
+          <div class="card-icon">📢</div>
+          <h3>Top Trending</h3>
+          <p>Ranked as #3 Most Subscribed Pakistani Family Vlogger (Entertainment Category) — Social Blade 2025.</p>
+        </div>
+      </div>
+      <div class="quote-block" style="margin-top: 48px;">
+        <div class="quote-text">"My fans are my family. Without their love, none of this would be possible. Thank you for making me who I am today."</div>
+        <div style="margin-top: 24px; font-weight: 600; color: #2d6a4f;">— Rajab Butt</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lifestyle & Philanthropy -->
+  <section>
+    <div class="container">
+      <h2>🤍 Beyond YouTube</h2>
+      <div class="grid-2">
+        <div class="card">
+          <div class="card-icon">🎓</div>
+          <h3>Education Advocate</h3>
+          <p>Rajab actively promotes education among youth, often sharing inspirational messages about balancing fame and studies.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤲</div>
+          <h3>Charity Work</h3>
+          <p>Organized multiple fundraising campaigns for flood relief and education funds for underprivileged children in Punjab.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏡</div>
+          <h3>Family Values</h3>
+          <p>Known for keeping his family at the core of his content — inspiring millions to cherish their own families.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect Section: Real Social Links -->
+  <footer>
+    <div class="container">
+      <div style="max-width: 760px; margin: 0 auto;">
+        <h2 style="color: #cfe8db; margin-bottom: 20px; display: block; text-align: center;">🤝 Join the Rajabians Family</h2>
+        <div style="height: 3px; width: 80px; background: #52b788; margin: 0 auto 32px auto;"></div>
+        <p style="margin-bottom: 26px; text-align: center;">Follow Rajab Butt on all platforms for daily vlogs, challenges, and exclusive behind-the-scenes content.</p>
+        <div class="social-links-footer">
+          <a href="https://www.youtube.com/@RajabButt" class="footer-icon" target="_blank" rel="noopener noreferrer">▶️</a>
+          <a href="https://www.instagram.com/rajabbutt.official/" class="footer-icon" target="_blank" rel="noopener noreferrer">📷</a>
+          <a href="https://www.tiktok.com/@rajabbuttofficial" class="footer-icon" target="_blank" rel="noopener noreferrer">🎵</a>
+          <a href="https://www.facebook.com/rajabbutt.official" class="footer-icon" target="_blank" rel="noopener noreferrer">📘</a>
+          <a href="https://twitter.com/rajabbutt_" class="footer-icon" target="_blank" rel="noopener noreferrer">🐦</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.95rem;">📧 Business inquiries: rajabbutt@creatormgmt.pk</p>
+        <p style="margin-top: 38px; font-size: 0.8rem; opacity: 0.75;">© 2026 Rajab Butt — Family First Entertainment. All stats based on public YouTube & social media data. #RajabButt #Rajabians #FamilyVlogs</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

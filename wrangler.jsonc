@@ -1,0 +1,8 @@
+{
+  "name": "my-pages-site",
+  "compatibility_date": "2026-05-09",
+
+  "assets": {
+    "directory": "."
+  }
+}
